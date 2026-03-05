@@ -13,7 +13,7 @@ pytest_plugins = ["canyonjs_playwright.pytest_plugin"]
 def dev_server():
     """在测试前自动启动 Vite 开发服务器"""
     proc = subprocess.Popen(
-        ["npm", "run", "dev"],
+        ["pnpm", "run", "dev"],
         stdout=subprocess.DEVNULL,
         stderr=subprocess.DEVNULL,
     )
